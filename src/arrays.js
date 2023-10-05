@@ -2,20 +2,57 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {}
+function greaterThanTen(numbers) {
+    
+  const isGreater = (num) => {
+      if (num > 10) {
+          return true
+      }
+  }
+
+  let greaterThan = numbers.filter(isGreater);
+
+  return greaterThan
+  
+}
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+
+  const isB = (word) => {
+
+    if (word[0] === 'b' || word[0] === 'B') {
+      return true
+    }};
+
+    let newArr = words.filter(isB);
+
+  return newArr;
+  
+
+
+}
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+
+  additionalItems.forEach((item) => {
+
+    originalArray.push(item);
+
+  });
+
+  return originalArray
+
+
+}
 
 // Return an array of all items with the given length.
 // Ex.:
