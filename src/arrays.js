@@ -181,7 +181,17 @@ function findIndex(items, value) {
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+
+  const numArray = []
+  for (let i = start; i < stop + 1; i++) {
+    numArray.push(i)
+  }
+
+  return numArray
+
+
+}
 
 export {
   bWords,
